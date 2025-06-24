@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MythicWorld - Donat</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #ffffff;
+      color: #333;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+    }
+    .donate-container {
+      background-color: #fdf9f0;
+      padding: 2rem;
+      border-radius: 15px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 95%;
+      max-width: 500px;
+      box-shadow: 0 0 20px rgba(255, 200, 0, 0.5);
+    }
+    h1 {
+      font-family: 'Press Start 2P', cursive;
+      color: #ffaa00;
+      font-size: 1rem;
+      text-align: center;
+    }
+    p {
+      text-align: center;
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .circle-progress {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      background: conic-gradient(#ffaa00 0%, #eee 0%);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 2rem;
+      box-shadow: inset 0 0 10px #ffd700, 0 0 20px #ffcc00;
+    }
+    .circle-progress .text {
+      text-align: center;
+      font-size: 14px;
+    }
+    .amount-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+    .amount-grid button {
+      padding: 10px;
+      background-color: #fff7e6;
+      border: 2px solid #ffaa00;
+      color: #ffaa00;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 8px;
+    }
+    .amount-grid button.selected,
+    .amount-grid button:hover {
+      background-color: #ffaa00;
+      color: white;
+      border-color: #ffaa00;
+    }
+    .custom-input {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-bottom: 1rem;
+      width: 100%;
+    }
+    .custom-input input {
+      padding: 10px;
+      border-radius: 5px;
+      border: 2px solid #ffaa00;
+      background-color: #fff;
+      color: #ffaa00;
+      font-size: 0.9rem;
+    }
+    .custom-input button {
+      padding: 10px;
+      background: linear-gradient(135deg, #ffce00, #ffaa00);
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+      font-family: 'Press Start 2P', cursive;
+      font-size: 10px;
+    }
+    .thankyou {
+      text-align: center;
+      margin-top: 1rem;
+      font-style: italic;
+      color: #666;
+      font-size: 0.85rem;
+    }
+    @media (min-width: 600px) {
+      .donate-container {
+        padding: 3rem;
+      }
+      h1 {
+        font-size: 1.2rem;
+      }
+      .circle-progress {
+        width: 180px;
+        height: 180px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="donate-container">
+    <h1>Bizni qo‘llab-quvvatlang</h1>
+    <p>MythicWorld Minecraft serverini rivojlantirish uchun yordam bering</p>
+    <div class="circle-progress">
+      <div class="text">
+        <strong style="color: #000; font-size: 16px;">0 / 280,000 so'm</strong><br />
+        so'm<br />
+        <span style="font-size: 12px; color: #888;">To‘landi</span>
+      </div>
+    </div>
+    <div class="amount-grid">
+      <a href="https://t.me/Bekzhanov_Rasul" target="_blank">
+        <button>5,000 so'm</button>
+      </a>   
+      <a href="https://t.me/Bekzhanov_Rasul" target="_blank">
+        <button>10,000 so'm</button>
+      </a>   
+      <a href="https://t.me/Bekzhanov_Rasul" target="_blank">
+        <button>50,000 so'm</button>
+      </a>   
+      <a href="https://t.me/Bekzhanov_Rasul" target="_blank">
+        <button>250,000 so'm</button>
+      </a>   
+    </div>
+    <div class="custom-input">
+      <input type="number" placeholder="Boshqa summa" />
+      <a href="https://t.me/Bekzhanov_Rasul" target="_blank">
+        <button>Xayriya qilish</button>
+      </a>
+    </div>
+    <div class="thankyou">
+      Minnatdormiz! Siz bilan birgalikda yanada yaxshi bo‘lamiz!
+    </div>
+  </div>
+</body>
+</html>
